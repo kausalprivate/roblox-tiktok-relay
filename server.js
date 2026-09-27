@@ -1,10 +1,8 @@
 const express = require('express');
-const cors = require('cors');
 const { WebcastPushConnection } = require('tiktok-live-connector');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
 let tiktokLiveConnection = null;
 let currentHost = "";
